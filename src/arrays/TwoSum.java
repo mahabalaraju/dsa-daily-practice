@@ -10,12 +10,13 @@ public class TwoSum {
 	public static void main(String[] args) {
 		int[] a = { 2, 0, 11, 15 ,9};
 		int target = 9;
-	int [] result= 	twoSum(a, target);
+	    int [] result= 	twoSum(a, target);
 		System.out.println(Arrays.toString(result));
 	}
 
 	private static int[] twoSum(int[] nums, int target) {
 		Map<Integer, Integer> map = new HashMap<>();
+		
 		for (int i = 0; i < nums.length; i++) {
 			
 			if (map.containsKey(target - nums[i])) {
